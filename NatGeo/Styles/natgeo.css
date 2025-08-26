@@ -1,40 +1,111 @@
-/* global*/
+/*Global*/
 *{
     margin: 0;
 }
+
 body{
     background-color: black;
-    font-family: arial;
+    font-family: Arial;
 }
 
-/*menu*/
+img{
+    max-width: 100%; /Responsive/
+}
+
+/*Nav*/
 .menu{
     background-color: white;
 }
+
+/*This working in children*/
 .menu a{
     color: black;
     text-decoration: none;
-    margin-right: 20px;
+    margin-right: 10px;
 }
-/*header*/
+
+/*Header, This working in a only tag*/
 header.site-init{
     color: white;
     text-align: center;
 }
 
 .site-init h2{
-    color:white;
+    color: white;
     font-size: 52px;
     text-transform: uppercase;
-    letter-spacing:  5px;
+    letter-spacing: 5px;
     margin: 10px 0;
 }
+
 .site-init p{
     color: white;
     font-size: 18px;
     margin: 10px 0;
 }
+
 .site-init span{
-    border-bottom: 2px solid #ffcc00;
+    border-bottom: 2px solid yellow;
 }
 
+/*Todays pick's sections*/
+.site-main{
+    display: flex;
+}
+
+.todays-container{
+
+}
+
+.todays-container h2{
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 4px;
+    border-left: 5px solid yellow;
+    padding-left: 20px;
+    margin: 30px 0;
+}
+
+.todays-picks{
+    display: flex;
+}
+
+.todays-picks img{
+    width: 80px;
+    height: 80px;
+    margin-right: 30px;
+}
+
+.today-pick-text{
+    color: white;
+}
+
+.today-pick-text h3{
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.today-pick-text p{
+    font-size: 16px;
+}
+
+.main-news{
+    background-color: blue;
+    height: 350px;
+}
+
+.secondary-news-container{
+    display: flex;
+}
+
+.secondary-news{
+    background-color: red;
+    width: 300px;
+    height: 350px;
+}
+.secondary-news:first-of-type{
+    margin-right: 10px;
+}
