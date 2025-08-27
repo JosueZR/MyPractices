@@ -20,14 +20,14 @@ img {
 
 /* Navigation */
 .menu {
-    background-color: #2d2727; /* fondo oscuro para que resalte el logo */
+    background-color: #2d2727; 
     padding: 10px 20px;
     display: flex;
     align-items: center;
 }
 
 .menu a img {
-    width: 60px;  /* tamaño más pequeño del logo */
+    width: 60px;  
     height: auto;
 }
 
@@ -35,7 +35,7 @@ img {
 .site-init {
     text-align: center;
     padding: 40px 20px;
-    background-color: #3a3a3a; /* color de fondo para que no se pierda el texto */
+    background-color: #3a3a3a;
 }
 
 .site-init h2 {
@@ -43,27 +43,26 @@ img {
     text-transform: uppercase;
     letter-spacing: 5px;
     margin-bottom: 10px;
-    color: #fff; /* asegura el color blanco */
+    color: #fff; 
 }
 
 .site-init p {
     font-size: 18px;
     max-width: 600px;
     margin: 0 auto;
-    color: #ddd; /* texto más suave */
+    color: #ddd; 
 }
 
-/* Main layout: imagen y detalles al lado */
 .site-main {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 40px; /* espacio entre imagen y detalles */
+    gap: 40px; 
     padding: 20px;
     flex-wrap: wrap;
 }
 
-/* Clothing Section */
+
 .your-selection {
     display: flex;
     flex-direction: column;
@@ -72,7 +71,7 @@ img {
 }
 
 .your-selection-img img {
-    width: 250px; /* imagen más compacta */
+    width: 250px; 
     border: 2px solid white;
     border-radius: 8px;
 }
