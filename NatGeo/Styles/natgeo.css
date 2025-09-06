@@ -9,19 +9,69 @@ body{
 }
 
 img{
-    max-width: 100%; /Responsive/
+    max-width: 100%; 
+}
+
+/*utilities*/
+.container{
+    width: 80%;
+    margin: 0 auto;
 }
 
 /*Nav*/
+.nava{
+    max-width: 100%;
+}
 .menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
     background-color: white;
 }
+.menu-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.menu-2 a:last-of-type{
+    background-color: yellow;
+    padding: 17px;
+    margin-right: 0;
+    font-weight: 700;
+}
+
+.menu-2 a:last-of-type:hover{
+    background-color: black;
+    color: white;
+
+}
+.menu-0{
+    display: none;
+}
+
+@media(max-width: 768px){
+    .menu{
+        justify-content: space-around;
+    }
+    .menu-0{
+        display: inline-block;
+    }
+
+    .icons{
+        display: none;
+    }
+}
+
 
 /*This working in children*/
 .menu a{
     color: black;
     text-decoration: none;
     margin-right: 10px;
+    font-size: 14px;
 }
 
 /*Header, This working in a only tag*/
@@ -81,6 +131,11 @@ header.site-init{
     color: white;
 }
 
+.main-news{
+    background-image: url(https://content.nationalgeographic.com.es/medio/2022/03/16/una-ballena-con-su-cria_daaa27c5_1280x720.jpg);
+    height: 350px;
+}
+
 .today-pick-text h3{
     font-size: 12px;
     text-transform: uppercase;
@@ -100,9 +155,20 @@ header.site-init{
 .secondary-news-container{
     display: flex;
 }
+@media(max-width: 768px){
+    .container{
+        width: 95%;
+    }
+    .site-main{
+        flex-direction: column-reverse;
+    }
+    .secondary-news-container{
+        flex-direction: column;
+    }
+}
 
 .secondary-news{
-    background-color: red;
+    background-color: white;
     width: 300px;
     height: 350px;
 }
