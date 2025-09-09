@@ -1,0 +1,66 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(155, 144, 144);
+    padding: 20px;
+}
+
+.title-container {
+    background-color: #96a7ba; /* Fondo del apartado */
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    color: white; /* Color del texto */
+}
+
+/* Estilos de la galería */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* Hover en imágenes */
+.gallery-item:hover img {
+    transform: scale(1.1);
+    filter: brightness(0.8);
+}
+
+/* Media queries para más columnas */
+@media (min-width: 900px) {
+.gallery {
+    grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+.gallery {
+    grid-template-columns: repeat(3, 1fr);
+    }
+}
