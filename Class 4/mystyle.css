@@ -1,0 +1,35 @@
+body{
+    font-family: arial;
+
+}
+
+header{
+    text-align: center;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #dedede;
+    height: 50px;
+    border-radius: 10px;
+
+}
+
+input{
+    margin-right: 10px;
+}
+
+button{
+    background-color: rgb(20, 41, 54);
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.alert-error{
+    color: red;
+
+}
